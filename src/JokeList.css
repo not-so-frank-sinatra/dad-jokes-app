@@ -45,9 +45,10 @@
 .JokeList-jokes{
     width: 70%;
     height: 90%;
+    padding-right: 1rem;
     background-color: white;
     align-self: center;
-    overflow: auto;
+    overflow: overlay;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 12px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -83,6 +84,22 @@
     transform: translateY(-2px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
 }
+
+/* ===== Scrollbar CSS ===== */
+    /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #787878;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+  }
 
 @keyframes shake-slow {
     0% {
